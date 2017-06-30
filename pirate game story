@@ -1,0 +1,52 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+int main(void) //tells a pirate story
+{
+
+	int buddies;
+	int afterbattle;
+	string exit;
+	cout<<"you are a pirate and are walking"<<"along in the crime filled\n"
+	      <<"city of Lagos(in 1789)."
+	      <<"how many of your pirate buddies \n"
+	      <<"do you bring along? (Any number between 11 and 115)\n";
+
+	//records the amount of friends you bring along
+	cin>> buddies;
+	//calculate the amount of pirates left after the battle.
+	afterbattle = 1 + buddies - 10;
+
+	cout<<"suddenly 10 knights jump out"
+	     <<"from the local tavern and \n"	     <<"draw their swords. "
+	     <<"10 knights and 10 pirates die in the \n"
+	     <<"battle. there are only"
+	     <<(buddies + 1 - 10)
+	     <<"pirates left, including you.\n\n";
+
+
+	cout<<" The fallen drop of total of 107 gold coins.\n"      <<"The bounty is split evenly, which works out to"
+		  << (107 / afterbattle) <<"gold coins\n"
+		  <<"for each survivor.\n";
+	cout<<" The last"<<(107 % afterbattle)<<"are fought over"
+		  <<"in a big drunken brawl.\n";cout<<"these last few coins are spent on more booze during the \n"
+	      <<"course of the brawl. Eventually everyone retires\n"
+	      <<"peacefully on the bar room floor.\n"
+	      <<"Another succesful day as a pirate!\n";
+
+    cout <<(buddies + 1 - 10);
+    cout<< " pirates left , including you .\n\n";
+    cout<<" the fallen drop a totla of 107 gold coins.\n"
+          <<" the loot is split evenly, which  works out to"
+          <<(107 / afterbattle) << "gold coins\n"
+          <<"for each survivor, leaving";
+    cout<< (107 % afterbattle) <<" unclaimed coins.\n";
+      cout<<"how many of your pirate buddies\n"<<"did you bring along? (Any number between 11 and 115)\n";
+
+    cout<<" you and the others argue over who should get the extra\n"<<("coins, and soon a big drunken brawl breaks out!\n\n");
+
+    cout<<"In the end , you are triumphant and"<< (107 / afterbattle) + (107 % afterbattle) <<("  coins richer in golds!\n\n");
+
+return 0;
+}
